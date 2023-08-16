@@ -1,0 +1,70 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: #063f1e;
+}
+main {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+span {
+  text-align: center;
+}
+
+a {
+  color: #0c783a;
+  text-decoration: none;
+}
+
+.main-banner {
+  height: 100%;
+  width: 100%;
+  font-size: 70px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: lowercase;
+  letter-spacing: 1.4px;
+}
+
+.links {
+  text-transform: lowercase;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 1150px) {
+  .main-banner {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main-banner {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .main-banner {
+    font-size: 50px;
+  }
+  span {
+    width: 50vw;
+  }
+  .links {
+    width: 20vw;
+  }
+}

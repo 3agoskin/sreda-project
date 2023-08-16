@@ -1,7 +1,9 @@
-import './globals.css'
+import './reset.scss'
+import './global.scss'
+import favicon from './favicon.svg'
 import { Anonymous_Pro } from 'next/font/google'
 
-const anonymousPro = Anonymous_Pro({ subsets: ['cyrillic', 'latin'], weight: ['700'] })
+const anonymousPro = Anonymous_Pro({ subsets: ['cyrillic'], weight: ['700'] })
 
 export const metadata = {
   title: 'Среда | Медиа с улиц Ханты-Мансийска',
@@ -10,8 +12,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+    <>
+    <head>
+      <link rel="icon" href={favicon.src} />
+    </head>
     <html lang="ru">
       <body className={anonymousPro.className}>{children}</body>
     </html>
+    </>
   )
 }
