@@ -12,6 +12,11 @@ main {
 
 span {
   text-align: center;
+
+  &::selection {
+    color: #fff;
+    background: #0c783a;
+  }
 }
 
 a {
