@@ -20,8 +20,13 @@ span {
 }
 
 a {
-  color: #0c783a;
+  color: #27B242;
   text-decoration: none;
+
+  &:hover {
+    color: #0c783a;
+  }
+
 }
 
 .main-banner {
@@ -64,6 +69,7 @@ a {
 
 @media screen and (max-width: 460px) {
   .main-banner {
+    width: 60vw;
     font-size: 50px;
   }
   span {
