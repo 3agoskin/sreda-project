@@ -20,12 +20,12 @@ span {
 }
 
 a {
-  color: #27B242;
+  color: #0c783a; 
   text-decoration: none;
   transition: all 0.3s;
 
   &:hover {
-    color: #0c783a;
+    color: #27B242;
   }
 
 }
@@ -70,10 +70,10 @@ a {
 
 @media screen and (max-width: 460px) {
   .main-banner {
-    width: 60vw;
     font-size: 50px;
   }
   span {
+    width: 60vw;
     letter-spacing: 6px;
   }
   .links {
