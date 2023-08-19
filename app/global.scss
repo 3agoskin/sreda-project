@@ -1,8 +1,15 @@
+:root {
+  --white-color: #fff;
+  --green-main-color: #063f1e;
+  --green-active-color: #0c783a;
+  --green-bright-active-color: #27B242;
+}
+
 html,
 body {
   height: 100%;
   width: 100%;
-  background: #063f1e;
+  background: var(--green-main-color);
 }
 main {
   display: flex;
@@ -14,18 +21,18 @@ span {
   text-align: center;
 
   &::selection {
-    color: #fff;
-    background: #0c783a;
+    color: var(--white-color);
+    background: var(--green-active-color);
   }
 }
 
 a {
-  color: #0c783a; 
+  color: var(--green-active-color); 
   text-decoration: none;
   transition: all 0.3s;
 
   &:hover {
-    color: #27B242;
+    color: var(--green-bright-active-color);
   }
 
 }
@@ -43,7 +50,6 @@ a {
 }
 
 .links {
-  text-transform: lowercase;
   position: absolute;
   bottom: 2rem;
   left: 50%;
@@ -52,7 +58,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.3rem;
+  gap: 12px;
   text-align: center;
 }
 

@@ -1,6 +1,8 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import style from "./page.module.scss";
 import Link from "next/link";
+import { AtSign } from "@/components";
+
 
 export default function Home() {
   return (
@@ -9,16 +11,18 @@ export default function Home() {
         <span>скоро здесь будет медиа</span>
       </div>
       <div className="links">
-          <div>
-            <Link href={"https://t.me/SredaMediaChannel"}>
-              Телеграм
-              </Link>
-          </div>
-          <div>
-            <Link href={"https://instagram.com/sreda_media/"}>
-              Соцсеть с&nbsp;картинками
-            </Link>
-          </div>
+        <div>
+          <Link className={style.link} href={"https://t.me/SredaMediaChannel"}>
+            <AtSign className={style.atSign}/>
+            <span className={style.span}>SredaMediaChannel</span>
+          </Link>
+        </div>
+        <div>
+          <Link className={style.link} href={"https://instagram.com/sreda_media/"}>
+            <AtSign className={style.atSign} />
+            <span className={style.span}>sreda_media</span>
+          </Link>
+        </div>
       </div>
     </main>
   );
